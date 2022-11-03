@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/giphy.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background: rgb(55, 44, 62);
+  color: rgb(247, 148, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 2px solid rgb(240, 252, 19);
+  box-shadow: black 0px 10px 20px;
+  animation-name: divs;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  transition: 0.4s ease;
+}
+
+div:hover {
+  transform: scale(1.1);
+  box-shadow: #fff 0px 0px 20px;
+  color: rgb(202, 227, 14);
+}
+@keyframes divs {
+  0% {
+    background-color: rgb(97, 95, 95);
+  }
+
+  50% {
+    background-color: rgb(193, 5, 5);
+  }
+
+  100% {
+    background-color: rgb(113, 5, 139);
+  }
+}
+
+p {
+  font-size: 50px;
+  color: #fff;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 70px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+span {
+  margin-top: 8px;
+  color: rgb(191, 197, 21);
+  font-size: 25px;
+  font-weight: bold;
+}
